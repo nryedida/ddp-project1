@@ -1,0 +1,19 @@
+---
+# title: "DeveloDataProducts-project1"
+# author: "Nageswara Yedida"
+# date: "July 10, 2018"
+# output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 10 July 2018
+```{r echo=FALSE}
+library(leaflet)
+mymap <- leaflet() %>%
+    addTiles() %>%
+    addMarkers(lat=27.175177, lng=78.042166, popup="The Taj Mahal")
+mymap
+```
